@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --pink: #FF69B4;
+    --blue: #191970; 
+    --gradient:linear-gradient(90deg, var(--pink), var(--blue));
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--pink);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #f9f9f9;    
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    background: var(--gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100%;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;   
+}
+
+.home .image img{
+    width: 40vw;
+    margin-left: 10rem;
+}
+
+.home .content h3{
+    font-size: 5.5rem;
+    color: var(--pink);
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.ingredients img{
+    width: 2.65in;
+    height: 2.21in;
+}
+
+.ingredients .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ingredients .box-container .box{
+    flex: 1 1 30rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .2rem solid var(--pink);
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.ingredients .box-container .box h3{
+    font-size: 1.6rem;
+    color: #333;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
+.ingredients .box-container .box p{
+    font-size: 1.3rem;
+    color: rgb(27, 26, 26);
+    padding-top: 1rem 0;
+    text-transform: none;
+    text-align: center;
+}
+
+.procedure .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.procedure img{
+    width: 2.65in;
+    height: 2.21in;
+}
+
+.procedure .box-container .box{
+    flex: 1 1 30rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.procedure .box-container .box h3{
+    font-size: 1.6rem;
+    color: #333;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
+.procedure .box-container .box p{
+    font-size: 1.3rem;
+    color: rgb(27, 26, 26);
+    padding-top: 1rem 0;
+    text-transform: none;
+    text-align: center;
+}
+
+.procedure .box-container #box3 p{
+    font-size: 1.3rem;
+    color: rgb(27, 26, 26);
+    padding-top: 1rem 0;
+    text-transform: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+
+    .home{
+        flex-flow: column-reverse;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .home .image img{
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%
+    }
+
+    .home{
+        margin-top: -5rem;
+    }
+
+    .home .content h3{
+        font-size: 3rem;
+    }
+
+    .home .content p{
+        font-size: 1rem;
+    }
+}
+
+
