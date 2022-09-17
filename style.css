@@ -263,4 +263,15 @@ header .logo{
     }
 }
 
+@media (max-width:440px){
+
+    .ingredients{
+        margin-top: -5rem;
+    }
+
+    .procedure{
+        margin-top: -5rem;
+    }
+}
+
 
