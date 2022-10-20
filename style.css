@@ -106,45 +106,27 @@ header .logo{
 }
 
 .ingredients img{
-    width: 2.65in;
-    height: 2.21in;
-}
-
-.ingredients .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.ingredients .box-container .box{
-    flex: 1 1 30rem;
-    background: #fff;
-    border-radius: .5rem;
-    border: .2rem solid var(--pink);
-    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
-    margin: 1.5rem;
-    padding: 3rem 2rem;
-    border-radius: .5rem;
-    text-align: center;
-    transition: .2s linear;
-}
-
-.ingredients .box-container .box h3{
-    font-size: 1.6rem;
-    color: #333;
+    width: 1.5in;
+    height: 1.2in;
     padding-top: 1rem;
-    margin-bottom: 1rem;
-    text-transform: none;
 }
 
-.ingredients .box-container .box p{
-    font-size: 1.3rem;
-    color: rgb(27, 26, 26);
-    padding-top: 1rem 0;
-    text-transform: none;
+.ingredients .box-container .tbl{
     text-align: center;
+    width: 70%;
+    margin-right: auto; margin-left: auto;
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
+
+th {
+    color: var(--pink);
+}
+
+table, td, th {
+    border: 2px solid var(--blue);
+    border-collapse: collapse;
+  }
 
 .procedure .box-container{
     display: flex;
@@ -194,6 +176,25 @@ header .logo{
     text-align: center;
 }
 
+.link a{
+    margin-right: 1.5rem;
+    border-radius: 9px;
+}
+
+.link .linkContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#exBtn{
+    margin-top: 20rem;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
 
 
 
