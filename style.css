@@ -117,6 +117,7 @@ header .logo{
     margin-right: auto; margin-left: auto;
     font-size: 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 
 th {
@@ -179,6 +180,7 @@ table, td, th {
 .link a{
     margin-right: 1.5rem;
     border-radius: 9px;
+    text-align: center;
 }
 
 .link .linkContainer {
